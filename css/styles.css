@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+}
+h1{
+font-family: "active", sans-serif;
+font-weight: 400;
+font-style: normal;
+z-index:1;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 08vw;
+}
+
+
+body{
+overflow-x: hidden;
+}
+
+.copyright{
+    font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+font-size: 14px;   
+z-index: 1;
+position: absolute;
+top: 5%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+img{
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.fleche{
+position: absolute;
+z-index:1;
+width: 20vw;
+height:25vh;
+bottom: 0px;
+}
+
+#chapitre2{
+position: relative;
+}
+
+#chapitre3{
+position: relative;
+}
+
+#chapitre4{
+position: relative;
+}
+
+#chapitre5{
+position: relative;
+}
+
+#chapitre6{
+position: relative;
+}
+
+#chapitre7{
+position: relative;
+}
+
+#chapitre8{
+position: relative;
+}
+
+#chapitre9{
+position: relative;
+}
+
+.perso{
+position: absolute;
+z-index:1;
+width: 40vw;
+height: 60vh;
+left: 50%;
+transform: translate(-50%, -50%);
+object-fit: contain; 
+bottom: 0vh;
+}
+
+
+#ev_planche{
+    position: absolute;
+    z-index:2;
+    width: 20vw;
+    height: 20vh;
+    object-fit: contain; 
+left: 15vw;
+bottom: 0vh;
+}
+
+#ev_cabane{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:100vh;
+    object-fit: contain; 
+    right:-20vw;
+    bottom: 0vh;
+}
+
+#ev_podium{
+    position: absolute;
+    z-index:2;
+    width: 40vw;
+    height:40vh;
+    right:20vw;
+    object-fit: contain; 
+    bottom: 0vh;
+}
+
+#ev_camion{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:70vh;
+    object-fit: contain; 
+    left:-20vw;
+    bottom: 0vh;
+}
+
+#ev_piscine{
+    position: absolute;
+    z-index:2;
+    width: 100vw;
+    height:90vh;
+    object-fit: contain; 
+    left:-30vw;
+    bottom: 0vh;
+}
+
+#ev_barbecue{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:70vh;
+    object-fit: contain; 
+    left:40vw;
+    bottom: 0vh;
+}
+
+#ev_berceau{
+    position: absolute;
+    z-index:2;
+    width: 60vw;
+    height:50vh;
+    object-fit: contain; 
+    left:50vw;
+    bottom: 0vh;
+}
+
+#ev_gateau{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:70vh;
+    object-fit: contain; 
+    left:30vw;
+    bottom: 0vh;
+}
+
+#ev_nuage01{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:70vh;
+    object-fit: contain; 
+}
+
+#ev_nuage02{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:70vh;
+    object-fit: contain; 
+}
+
+#ev_nuage03{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:70vh;
+    object-fit: contain; 
+}
+
+#ev_arbre{
+    position: absolute;
+    z-index:2;
+    width: 90vw;
+    height:100vh;
+    object-fit: contain;
+    right:35vw;
+    bottom: 0vh;
+}
+
+
+header {
+    background-image: url("../img/img_arriere_plan/champs.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre2{
+    background-image: url("../img/img_arriere_plan/forêt.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre3{
+    background-image: url("../img/img_arriere_plan/auditorium.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre4{
+    background-image: url("../img/img_arriere_plan/stationnement.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre5{
+    background-image: url("../img/img_arriere_plan/cours.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre6{
+    background-image: url("../img/img_arriere_plan/chambre.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre7{
+    background-image: url("../img/img_arriere_plan/mariage.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre8{
+    background-image: url("../img/img_arriere_plan/chambre_vide.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#chapitre9{
+    background-image: url("../img/img_arriere_plan/forêt.png");
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.bg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    /* spritesheet_ball*/
+
+.spritesheet_ball {
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    background-image: url('../img/img_sprites_sheets/spritesheet-ball.png');
+  
+
+    animation-name: bond;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+  }
+  
+  @keyframes bond {
+    from { background-position: 0 0; }
+    to { background-position: calc(48vw*-48) 0; } 
+  }
+
+      /* spritesheet_fleur */
+
+  .spritesheet_fleur {
+
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+
+    background-image: url('../img/img_sprites_sheets/spritesheet-fleur.png');
+  
+
+    animation-name: bond;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+ 
+  }
+  
+  @keyframes bond {
+    from { background-position: 0 0; }
+    to { background-position: calc(48vw*-48) 0; } 
+    /* Note: 19 images x 700px = 13300px */
+  }
+
+        /* spritesheet_skite */
+
+        .spritesheet_skite {
+
+            width: 50vw;
+            aspect-ratio: 1/1;
+            background-repeat: no-repeat;
+            background-size:cover;
+          
+        
+            background-image: url('../img/img_sprites_sheets/spritesheet-skite.png');
+          
+        
+            animation-name: bond;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(48);
+         
+          }
+          
+          @keyframes bond {
+            from { background-position: 0 0; }
+            to { background-position: calc(48vw*-48) 0; } 
+            /* Note: 19 images x 700px = 13300px */
+          }
+
+                /* spritesheet_oiseau */
+
+  .spritesheet_oiseau {
+
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+
+    background-image: url('../img/img_sprites_sheets/spritesheet-oiseau.png');
+  
+
+    animation-name: bond;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+ 
+  }
+  
+  @keyframes bond {
+    from { background-position: 0 0; }
+    to { background-position: calc(48vw*-48) 0; } 
+    /* Note: 19 images x 700px = 13300px */
+  }
+
+        /* spritesheet_chien */
+
+        .spritesheet_chien {
+
+            width: 50vw;
+            aspect-ratio: 1/1;
+            background-repeat: no-repeat;
+            background-size:cover;
+          
+        
+            background-image: url('../img/img_sprites_sheets/spritesheet_chien.png');
+          
+        
+            animation-name: bond;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(48);
+         
+          }
+          
+          @keyframes bond {
+            from { background-position: 0 0; }
+            to { background-position: calc(48vw*-48) 0; } 
+            /* Note: 19 images x 700px = 13300px */
+          }
+
+                /* spritesheet_ballon */
+
+  .spritesheet_ballon {
+
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+
+    background-image: url('../img/img_sprites_sheets/spritesheet_ballon_fete.png');
+  
+
+    animation-name: bond;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+ 
+  }
+  
+  @keyframes bond {
+    from { background-position: 0 0; }
+    to { background-position: calc(48vw*-48) 0; } 
+    /* Note: 19 images x 700px = 13300px */
+  }
+
+.textescroll{
+font-family: "active", sans-serif;
+font-weight: 300;
+font-style: normal; 
+font-size: 03vw;   
+z-index: 1;
+position: absolute;
+bottom: 5%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.fleche{  
+z-index: 2;
+width: 9vw;
+height: 9vh;
+background-size: cover;
+position: fixed;
+bottom: 5%;
+left: 50%;
+
+}
+
+.barre_defilement{
+    max-width: 100px;
+    height: 100vh;
+    position:fixed;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+height:60px;
+width:60px;
+object-fit: cover;
+background-color: none;
+}
+
+button{
+border:none;
+z-index:1;
+background-color: none;
+}
