@@ -21,6 +21,9 @@ gsap.from(".fleche" , {
         markers: true
     }
 });
+gsap.timeline()
+.from('#ev_planche', { rotate:25, duration: 3 })
+.from('#ev_cabane', { x: '400%' });
 
   /* Animation chapitre 3 */
   gsap.to("#chapitre3", {
@@ -34,7 +37,8 @@ gsap.from(".fleche" , {
         markers: true
     }
 });
-
+gsap
+  .from("#ev_podium", { rotation:25, repeat:-1, duration:4})
 
   /* Animation chapitre 4 */
   gsap.to("#chapitre4", {
@@ -48,7 +52,8 @@ gsap.from(".fleche" , {
         markers: true
     }
 });
-
+gsap
+  .from("#ev_camion", { rotation:12, repeat:-1, duration:3})
 
 
   /* Animation chapitre 5 */
@@ -63,8 +68,12 @@ gsap.from(".fleche" , {
         markers: true
     }
 });
+gsap.timeline()
+.from('#ev_piscine', { rotate:25, duration: 3, repeat:-1 })
+.from('#ev_barbecue', { x: '400%' });
 
   /* Animation chapitre 6 */
+
   gsap.to("#chapitre6", {
     backgroundSize: "120%",
     ease: "none",
@@ -76,6 +85,8 @@ gsap.from(".fleche" , {
         markers: true
     }
 });
+gsap
+  .from("#ev_berceau", { rotation:12, repeat:-1, duration:3})
 
   /* Animation chapitre 7 */
   gsap.to("#chapitre7", {
@@ -89,6 +100,11 @@ gsap.from(".fleche" , {
         markers: true
     }
 });
+gsap
+gsap.timeline()
+.from('#ev_gateau', { x: '400%',duration:2 })
+.from("#ev_gateau", { rotation:12, repeat:-1, duration:3});
+
 
 
   /* Animation chapitre 9 */
@@ -103,4 +119,12 @@ gsap.from(".fleche" , {
         markers: true
     }
 });
-
+gsap
+.from("#ev_arbre", { width:150,duration:3})
+gsap.timeline()
+.from('#ev_nuage_01', {  x: '400%', duration:5  })
+.from('#ev_nuage_02', { x: '400%', duration:5 })
+.from('#ev_nuage_03', { x: '400%',duration:4})
+.from('#ev_nuage_01', { rotate:25, duration: 1, repeat:-1 })
+.from('#ev_nuage_02', { rotate:40, duration: 4, repeat:-1 })
+.from('#ev_nuage_03', { rotate:50, duration: 2, repeat:-1 });
