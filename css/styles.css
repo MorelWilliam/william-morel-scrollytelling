@@ -14,17 +14,6 @@ transform: translate(-50%, -50%);
 font-size: 08vw;
 }
 
-p{
-    font-family: "active", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    z-index:1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 01vw;    
-}
 
 
 body{
@@ -485,6 +474,7 @@ left: 50%;
     top: 50%;
     right: 0%;
     transform: translate(-50%, -50%);
+    opacity: 0;
 }
 
 img{
@@ -498,4 +488,92 @@ button{
 border:none;
 z-index:1;
 background-color: none;
+}
+
+.t_1{font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    left:20vw;
+    font-size: 02vw;
+    max-width: 20vw;    
+    }
+
+.t_2{
+    font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    right:20vw;
+    font-size: 02vw;
+    max-width: 20vw;      
+}
+
+.t_3{font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    right:20vw;
+    font-size: 02vw;
+    max-width: 20vw;     
+    }
+
+.t_4{font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    right:20vw;
+    font-size: 02vw;
+    max-width: 20vw;       
+
+}.t_5{font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    left:20vw;
+    font-size: 02vw;
+    max-width: 20vw;    
+}
+
+.t_6{font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    left:20vw;
+    font-size: 02vw;
+    max-width: 20vw;     
+}
+
+.t_7{font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    right:20vw;
+    font-size: 02vw;
+    max-width: 20vw;    
+}
+
+.t_8{font-family: "active", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index:1;
+    position: absolute;
+    top: 50%;
+    right:20vw;
+    font-size: 02vw;
+    max-width: 20vw;      
 }
