@@ -211,6 +211,7 @@ bottom: 0vh;
     width: 40vw;
     height:30vh;
     right:30vw;
+    opacity: 0;
 
 }
 
@@ -219,6 +220,7 @@ bottom: 0vh;
     z-index:2;
     width: 20vw;
     height:40vh;
+    opacity: 0;
 }
 
 #ev_nuage_03{
@@ -227,6 +229,7 @@ bottom: 0vh;
     z-index:5;
     width: 50vw;
     height:60vh;
+    opacity: 0;
 }
 
 header {

@@ -122,9 +122,9 @@ gsap.timeline()
 gsap
 .from("#ev_arbre", { width:150,duration:3})
 gsap.timeline()
-.from('#ev_nuage_01', {  x: '400%', duration:5  })
-.from('#ev_nuage_02', { x: '400%', duration:5 })
-.from('#ev_nuage_03', { x: '400%',duration:4})
-.from('#ev_nuage_01', { rotate:25, duration: 1, repeat:-1 })
-.from('#ev_nuage_02', { rotate:40, duration: 4, repeat:-1 })
-.from('#ev_nuage_03', { rotate:50, duration: 2, repeat:-1 });
+.from('#ev_nuage_01', {  x: '400%', duration:5, opacity:100  })
+.from('#ev_nuage_02', { x: '400%', duration:5,opacity:100 })
+.from('#ev_nuage_03', { x: '400%',duration:4,opacity:100})
+.from('#ev_nuage_01', { rotate:25, duration: 1, repeat:-1,opacity:100 })
+.from('#ev_nuage_02', { rotate:40, duration: 4, repeat:-1,opacity:100 })
+.from('#ev_nuage_03', { rotate:50, duration: 2, repeat:-1,opacity:100 });
