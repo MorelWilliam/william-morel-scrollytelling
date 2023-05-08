@@ -70,6 +70,13 @@ gsap
 });
 gsap
   .from("#ev_camion", { rotation:12, repeat:-1, duration:3})
+ gsap.to('#ev_camion', {
+    motionPath: '#Calque_1-2',
+    duration: 4,
+    repeat: -1,
+    yoyo: true,
+  })
+  
 
 
   /* Animation chapitre 5 */

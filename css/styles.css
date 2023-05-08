@@ -604,4 +604,8 @@ background-color: none;
     max-width: 20vw;      
 }
 
+svg{
+    position: absolute;   
+}
+
   
