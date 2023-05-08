@@ -121,6 +121,17 @@ bottom: 0vh;
     bottom: 0vh;
 }
 
+svg {
+    position: absolute;
+    top: 0;
+    display: block;
+    fill: transparent;
+    stroke: var(--green);
+    stroke-width: 2px;
+    width: 300px;
+  }
+  
+
 #ev_camion{
     position: absolute;
     z-index:2;

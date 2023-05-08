@@ -1,21 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".fleche" , {
     y:-10,
@@ -68,15 +54,12 @@ gsap
         markers: true
     }
 });
-gsap
-  .from("#ev_camion", { rotation:12, repeat:-1, duration:3})
- gsap.to('#ev_camion', {
-    motionPath: '#Calque_1-2',
-    duration: 4,
-    repeat: -1,
-    yoyo: true,
-  })
-  
+gsap.to('#camion', {
+  motionPath: '#courbe',
+  duration: 4,
+  repeat: -1,
+  yoyo: true,
+})
 
 
   /* Animation chapitre 5 */
