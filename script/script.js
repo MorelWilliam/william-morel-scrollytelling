@@ -1,4 +1,20 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 gsap.from(".fleche" , {
@@ -16,8 +32,8 @@ gsap.from(".fleche" , {
     scrollTrigger: {
         trigger: "#chapitre2",
         start: "top bottom",
-        end: "bottom top",
-        scrub: 0.5,
+        end: "bottom top ",
+        scrub: true,
         markers: true
     }
 });
@@ -30,10 +46,10 @@ gsap.timeline()
     backgroundSize: "120%",
     ease: "none",
     scrollTrigger: {
-        trigger: "#chapitre23",
+        trigger: "#chapitre3",
         start: "top bottom",
         end: "bottom top",
-        scrub: 0.5,
+        scrub: true,
         markers: true
     }
 });
@@ -48,7 +64,7 @@ gsap
         trigger: "#chapitre4",
         start: "top bottom",
         end: "bottom top",
-        scrub: 0.5,
+        scrub: true,
         markers: true
     }
 });
@@ -64,7 +80,7 @@ gsap
         trigger: "#chapitre5",
         start: "top bottom",
         end: "bottom top",
-        scrub: 0.5,
+        scrub: true,
         markers: true
     }
 });
@@ -81,8 +97,8 @@ gsap.timeline()
         trigger: "#chapitre6",
         start: "top bottom",
         end: "bottom top",
-        scrub: 0.5,
-        markers: true
+        scrub: true,
+        markers: true,
     }
 });
 gsap
@@ -96,7 +112,7 @@ gsap
         trigger: "#chapitre7",
         start: "top bottom",
         end: "bottom top",
-        scrub: 0.5,
+        scrub: true,
         markers: true
     }
 });
@@ -115,7 +131,7 @@ gsap.timeline()
         trigger: "#chapitre9",
         start: "top bottom",
         end: "bottom top",
-        scrub: 0.5,
+        scrub: true,
         markers: true
     }
 });
