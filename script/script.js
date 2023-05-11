@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(MorphSVGPlugin);
+   /* gsap.registerPlugin(DrawSVGPlugin); */  
+  /*  gsap.registerPlugin(MorphSVGPlugin); */
 
 
 
