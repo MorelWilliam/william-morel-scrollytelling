@@ -68,14 +68,17 @@ gsap
         markers: true
     }
 });
-gsap
-  .from("#ev_camion", { rotation:12, repeat:-1, duration:3})
- gsap.to('#ev_camion', {
-    motionPath: '#Calque_1-2',
-    duration: 4,
-    repeat: -1,
-    yoyo: true,
-  })
+gsap.to('#ev_camion', {
+  motionPath: {
+  path: '#parcours_voiture',
+  align: '#parcours_voiture',
+  autoRotate:true,  
+
+},
+repeat: -1,
+  duration: 5,
+  yoyo: true,      
+})
   
 
 
@@ -129,6 +132,19 @@ gsap.timeline()
 .from("#ev_gateau", { rotation:12, repeat:-1, duration:3});
 
 
+  /* Animation chapitre 8 */
+  gsap.timeline(
+    {scrollTrigger: {
+      trigger: "#chapitre8",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: true
+ 
+  }
+})
+.fromTo('#ligne', {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
+.fromTo("#point", {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
 
   /* Animation chapitre 9 */
   gsap.to("#chapitre9", {

@@ -124,7 +124,7 @@ bottom: 0vh;
 #ev_camion{
     position: absolute;
     z-index:2;
-    width: 90vw;
+    width: 60vw;
     height:70vh;
     object-fit: contain; 
     left:-20vw;
@@ -230,6 +230,28 @@ bottom: 0vh;
     width: 50vw;
     height:60vh;
     opacity: 0;
+}
+
+.papier{
+    border: solid;
+    border-color: black;
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+}
+
+.point_intero{
+height: 10vh; 
+width: 10vw;
+left: 55vw;
+bottom: 65vh;
+transform: rotate(30deg);
+}
+
+.parcours_voiture{
+ z-index: 2;
+width: 35vw;
+opacity: 0;
 }
 
 header {
