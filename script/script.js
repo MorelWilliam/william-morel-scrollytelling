@@ -5,23 +5,6 @@ gsap.registerPlugin(MorphSVGPlugin);
 
 
 
-// Ajouter un événement "click" sur le bouton
-bouton.addEventListener("click", function() {
-  // Rediriger vers l'URL spécifiée
-  window.location.href = "https://www.example.com";
-});
-
-
-
-
-
-
-
-
-
-
-
-
 
 gsap.from(".fleche" , {
     y:-10,
@@ -33,31 +16,50 @@ gsap.from(".fleche" , {
 
   /* Animation chapitre 2 */
   gsap.to("#chapitre2", {
-    backgroundSize: "120%",
+    backgroundPosition: "50% 100%",
     ease: "none",
     scrollTrigger: {
         trigger: "#chapitre2",
         start: "top bottom",
         end: "bottom top ",
         scrub: true,
-        markers: true
-    }
-});
-gsap.timeline()
-.from('#ev_planche', { rotate:25, duration: 3 })
-.from('#ev_cabane', { x: '400%' });
+        markers: true,
 
-gsap.to("#section-parallax", {
-  backgroundPosition: "50% 100%",
-  ease: "none",
+    },
+});
+
+gsap.to("#ev_planche", {
+bottom: "20%",
   scrollTrigger: {
-      trigger: "#section-parallax",
+      trigger: "#chapitre2",
       start: "top bottom",
-      end: "bottom top",
+      end: "bottom top ",
       scrub: true,
-      markers: true
   }
 });
+
+gsap.to("#ev_cabane", {
+  bottom: "80%",
+    scrollTrigger: {
+        trigger: "#chapitre2",
+        start: "top bottom",
+        end: "bottom top ",
+        scrub: true,
+    }
+  });
+
+  
+gsap.to("#perso_chap2", {
+  bottom: "50%",
+    scrollTrigger: {
+        trigger: "#chapitre2",
+        start: "top bottom",
+        end: "bottom top ",
+        scrub: true,
+    }
+  });
+
+
 
   /* Animation chapitre 3 */
   gsap.to("#chapitre3", {
@@ -71,8 +73,7 @@ gsap.to("#section-parallax", {
         markers: true
     }
 });
-gsap
-  .from("#ev_podium", { rotation:25, repeat:-1, duration:4})
+gsap.from("#ev_podium", { rotation:25, repeat:-1, duration:4})
 
   /* Animation chapitre 4 */
   gsap.to("#chapitre4", {
@@ -90,13 +91,11 @@ gsap.to('#ev_camion', {
   motionPath: {
   path: '#parcours_voiture',
   align: '#parcours_voiture',
-  autoRotate:true,  
-
-},
-repeat: -1,
+  autoRotate:true,},
+  repeat: -1,
   duration: 5,
   yoyo: true,      
-})
+});
   
 
 
@@ -118,9 +117,7 @@ gsap.timeline()
 
   /* Animation chapitre 6 */
 
-  gsap.to("#chapitre6", {
-    backgroundSize: "120%",
-    ease: "none",
+  gsap.timeline({
     scrollTrigger: {
         trigger: "#chapitre6",
         start: "top bottom",
@@ -128,9 +125,13 @@ gsap.timeline()
         scrub: true,
         markers: true,
     }
-});
-gsap
-  .from("#ev_berceau", { rotation:12, repeat:-1, duration:3})
+})
+.to("#chapitre6", {
+  backgroundSize: "120%",ease: "none"});
+
+
+gsap.from("#ev_berceau", { rotation:12, repeat:-1, duration:3})
+
 
   /* Animation chapitre 7 */
   gsap.to("#chapitre7", {
@@ -144,48 +145,46 @@ gsap
         markers: true
     }
 });
-gsap
-gsap.timeline()
-.from('#ev_gateau', { x: '400%',duration:2 })
-.from("#ev_gateau", { rotation:12, repeat:-1, duration:3});
 
+gsap.to('#ev_gateau', { 
+  x: '+-100%',
+  duration:5,
+  scrollTrigger: {
+    toggleActions: 'restart complete reverse reset',
+    markers: true,
+    start: 'top 0',
+    end: 'top 100%',
+    trigger: '#chapitre7',
+  }
+})
 
   /* Animation chapitre 8 */
+ /* Draw svg et morph
   gsap.timeline(
     {scrollTrigger: {
       trigger: "#chapitre8",
       start: "top bottom",
       end: "bottom top",
       scrub: true,
-      markers: true
- 
+      markers: true,
   }
 })
 .fromTo('#ligne', {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
 .fromTo("#point", {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
-
-gsap.to("#chaise_morph", {
-  morphSVG: "#cane_morph"
-},
+.to("#chaise_morph", {duration:3, morphSVG: {shape:"#cane_morph"}}) Animation chapitre 9 */
 
   /* Animation chapitre 9 */
-  gsap.to("#chapitre9", {
-    backgroundSize: "120%",
-    ease: "none",
-    scrollTrigger: {
-        trigger: "#chapitre9",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
-        markers: true
-    }
-});
-gsap
-.from("#ev_arbre", { width:150,duration:3})
-gsap.timeline()
-.from('#ev_nuage_01', {  x: '400%', duration:5, opacity:100  })
-.from('#ev_nuage_02', { x: '400%', duration:5,opacity:100 })
-.from('#ev_nuage_03', { x: '400%',duration:4,opacity:100})
-.from('#ev_nuage_01', { rotate:25, duration: 1, repeat:-1,opacity:100 })
-.from('#ev_nuage_02', { rotate:40, duration: 4, repeat:-1,opacity:100 })
-.from('#ev_nuage_03', { rotate:50, duration: 2, repeat:-1,opacity:100 });
+
+gsap.timeline({
+  scrollTrigger: {
+    trigger: "#chapitre9",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+    markers: true,
+    toggleActions: 'play pause resume pause'
+}}
+)
+.from('.nuage.no1',{x:'-200%'},{  x: '200%', rotate:25, duration: 6, repeat:-1,opacity:100 })
+.from('.nuage.no2', {x:'-200%'},{ x: '200%',rotate:40, duration: 6, repeat:-1,opacity:100 })
+.from('.nuage.no3', {x:'-200%'},{x: '200%', rotate:50, duration: 6, repeat:-1,opacity:100 })

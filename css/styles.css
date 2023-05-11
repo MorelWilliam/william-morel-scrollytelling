@@ -14,6 +14,14 @@ transform: translate(-50%, -50%);
 font-size: 08vw;
 }
 
+.morph{
+    position: absolute;
+    bottom: 10vh;
+    height: 20vh;
+    width: 20vw;
+
+}
+
 ul.technique-gsap{
     background: rgba(0,0,0,0.3);
     color: white;
@@ -279,7 +287,9 @@ width: 35vw;
 opacity: 0;
 }
 
-
+section{
+    position: relative;
+}
 
 header {
     background-image: url("../img/img_arriere_plan/champs.png");
@@ -292,7 +302,7 @@ background-size: cover;
 
 #chapitre2{
     background-image: url("../img/img_arriere_plan/forêt.png");
-height: 100vh;
+height: 250vh;
 width: 100vw;
 background-position: center;
 background-repeat: no-repeat;
