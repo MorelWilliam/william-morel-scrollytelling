@@ -14,6 +14,31 @@ transform: translate(-50%, -50%);
 font-size: 08vw;
 }
 
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
+
+#cane_morph{
+    visibility: hidden;
+}
+
 
 
 body{
@@ -254,6 +279,8 @@ width: 35vw;
 opacity: 0;
 }
 
+
+
 header {
     background-image: url("../img/img_arriere_plan/champs.png");
 height: 100vh;
@@ -270,6 +297,8 @@ width: 100vw;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+background-attachment: scroll;
+background-position: 50% 0%;
 }
 
 #chapitre3{

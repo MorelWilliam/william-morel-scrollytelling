@@ -5,6 +5,12 @@ gsap.registerPlugin(MorphSVGPlugin);
 
 
 
+// Ajouter un événement "click" sur le bouton
+bouton.addEventListener("click", function() {
+  // Rediriger vers l'URL spécifiée
+  window.location.href = "https://www.example.com";
+});
+
 
 
 
@@ -40,6 +46,18 @@ gsap.from(".fleche" , {
 gsap.timeline()
 .from('#ev_planche', { rotate:25, duration: 3 })
 .from('#ev_cabane', { x: '400%' });
+
+gsap.to("#section-parallax", {
+  backgroundPosition: "50% 100%",
+  ease: "none",
+  scrollTrigger: {
+      trigger: "#section-parallax",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: true,
+      markers: true
+  }
+});
 
   /* Animation chapitre 3 */
   gsap.to("#chapitre3", {
@@ -145,6 +163,10 @@ gsap.timeline()
 })
 .fromTo('#ligne', {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
 .fromTo("#point", {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
+
+gsap.to("#chaise_morph", {
+  morphSVG: "#cane_morph"
+},
 
   /* Animation chapitre 9 */
   gsap.to("#chapitre9", {

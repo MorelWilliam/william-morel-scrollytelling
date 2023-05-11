@@ -16,7 +16,12 @@
   
     
     <header>
-  
+   <ul class="technique-gsap"> 
+    <li>animation sur position y </li> 
+    <li>durée de 2.5 seconde</li> 
+    <li>repeat 
+    </li> 
+</ul> 
 <h1> L'histoire d'une vie</h1>  <!-- titre niv 1 -->
 <p class="copyright">« Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège Montmorency.
     © 2023 - Conception : William Morel et Raphaël Dumont| Développement Web : Marie-Michelle Ouellet. »</p> <!-- paragraphe -->
@@ -49,15 +54,35 @@
             
             </div>
         
-        <section id="chapitre2" class="bg">  <!-- chapitre 2 -->
+        <section id="chapitre2 section-parallax" class="bg">  <!-- chapitre 2 -->
+  <ul class="technique-gsap"> 
+    <li>timeline de 2 étapes</li> 
+    <li>pin=true, afin que le chapitre reste collé, le temps de l'animation</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre2</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
         <div><img class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_1">  Voici George, il fête son 6e anniversaire et pour sa fête, son papa lui a offert une cabane dans les arbres. </p></div>    
-         <img class="perso perso_6" src="../img/img_personnages/6.png" alt="6">
-        <img id="ev_cabane" src="../img/img_elements_visuels/cabane_arbre.png" alt="cabane">
-        <img id="ev_planche" src="../img/img_elements_visuels/planche.png" alt="planche">
+         <img class="perso perso_6"  data-vitesse=".10" src="../img/img_personnages/6.png" alt="6">
+        <img id="ev_cabane" data-vitesse=".50" src="../img/img_elements_visuels/cabane_arbre.png" alt="cabane">
+        <img id="ev_planche" data-vitesse=".80" src="../img/img_elements_visuels/planche.png" alt="planche">
         <div class="spritesheet_ball"></div>
         </section>
         
         <section id="chapitre3" class="bg">  <!-- chapitre 3 -->
+  <ul class="technique-gsap"> 
+    <li>...</li> 
+    <li>...</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre3</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
             <div><img class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_2"> À ses 17 ans, pour sa graduation, le père et la mère de George, lui ont acheté des fleurs. George a réussi sa technique en génie civile donc maintenant il est content. </p></div>    
             <img class="perso perso_5" src="../img/img_personnages/5.png" alt="5">
             <img id="ev_podium" src="../img/img_elements_visuels/podium.png" alt="podium"> 
@@ -65,6 +90,16 @@
         </section>
         
         <section id="chapitre4" class="bg">  <!-- chapitre 4 -->
+  <ul class="technique-gsap"> 
+    <li>...</li> 
+    <li>...</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre4</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
             <div><img  class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_3"> À ses 19 ans, pour son anniversaire, ses parents lui ont acheté une petite voiture rouge. Depuis ce cadeau, George vie heureux, car cet achat lui a permi d'être libre.</p></div>    
             <img class="perso perso_5" src="../img/img_personnages/5.png" alt="5">
             <img id="ev_camion" src="../img/img_elements_visuels/camion.png" alt="camion">
@@ -76,6 +111,16 @@
         </section>
        
         <section id="chapitre5" class="bg">  <!-- chapitre 5 -->
+  <ul class="technique-gsap"> 
+    <li>...</li> 
+    <li>...</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre5</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
             <div><img  class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_4"> À l'achat de sa première maison, George a invité tous ses amis pour un petit barbecue. Aussi, George est très fier de sa nouvelle piscine.</p></div>    
             <img class="perso perso_4" src="../img/img_personnages/4.png" alt="4">
             <img id="ev_piscine" src="../img/img_elements_visuels/piscine.png" alt="piscine">  
@@ -84,6 +129,16 @@
         </section>
         
         <section id="chapitre6" class="bg">  <!-- chapitre 6 -->
+  <ul class="technique-gsap"> 
+    <li>...</li> 
+    <li>...</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre6</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
             <div><img  class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_5"> Après l'acouchement de sa femme Georgette, George s'occupe de sa fille naissante, car sa femme est très fatiguée. Aussi, George a acheté un petit pug nommé Françis.</p></div>    
             <img class="perso perso_3" src="../img/img_personnages/3.png" alt="3">
             <img id="ev_berceau" src="../img/img_elements_visuels/enfant_mi_mort.png" alt="berceau">  
@@ -91,6 +146,16 @@
         </section>
         
         <section id="chapitre7" class="bg">  <!-- chapitre 7  -->
+  <ul class="technique-gsap"> 
+    <li>...</li> 
+    <li>...</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre7</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
             <div><img  class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_6"> George est très content, car sa fille se marie. Il est heureux, car sa fille est heureuse et le gâteau est très bon.  </p></div>    
             <img class="perso perso_1" src="../img/img_personnages/1.png" alt="1">
             <img id="ev_gateau" src="../img/img_elements_visuels/gateau.png" alt="gateau">  
@@ -98,6 +163,16 @@
         </section>
 
         <section id="chapitre8" class="bg">  <!-- chapitre 8 -->
+  <ul class="technique-gsap"> 
+    <li>...</li> 
+    <li>...</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre8</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
             <div><img  class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_7"> George est vraiment triste, car il a eu une mauvaise nouvelle. George a une maladie , mais ,selon les médecins, il peut s'en sortir.  </p></div>    
             <img class="perso perso_1" src="../img/img_personnages/1.png" alt="1">
 <svg class="point_intero" width="56" height="171" viewBox="0 0 56 171" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,9 +180,28 @@
   <path id="point" d="M13.0216 155.883C12.2844 155.228 10.5496 154.962 9.67341 154.711C7.70879 154.15 7.14789 155.908 5.48811 156.419C2.67756 157.284 1.57066 158.426 1.57066 161.609C1.57066 162.874 1.76563 165.448 2.54165 166.397C5.84981 170.44 12.0928 168.921 15.1645 166.129C17.8642 163.675 15.3913 159.271 13.0216 157.691" stroke="black" stroke-width="3" stroke-linecap="round"/>
   </svg>  
 
+<svg width="50" height="180" viewBox="0 0 50 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="cane_morph" d="M1.70544 2.75398C4.07183 2.75398 5.36275 3.95005 7.58542 4.5632C14.8475 6.56652 23.5866 5.19643 31.0148 5.19643C34.9246 5.19643 38.8144 5.28118 42.4129 3.38721C43.9157 2.59627 47.9143 0.824239 48.112 4.38228C48.2264 6.4413 48.3675 8.85112 48.112 10.8955C47.9631 12.0862 45.4228 10.5144 44.8554 10.2623C43.2951 9.56877 40.824 10.0813 39.1563 10.0813C33.9217 10.0813 29.1852 8.45303 23.6875 8.45303C19.9563 8.45303 16.1979 8.32449 12.4703 8.45303C11.0637 8.50153 9.61033 9.70478 8.21864 9.08626C7.43372 8.7374 6.58428 7.68641 5.77619 7.63888C4.3793 7.55671 0.595012 4.61244 3.33374 5.82966C5.06099 6.59732 6.51621 7.73267 8.21864 8.63395C13.7653 11.5704 19.8825 11.7096 26.1299 11.7096C30.7343 11.7096 35.366 11.8412 39.9705 11.7096C43.7038 11.603 44.8554 10.6762 44.8554 7.2318C44.8554 1.36687 40.5228 11.0894 37.9351 11.6644C36.408 12.0038 32.8613 9.26718 34.6785 9.26718C39.195 9.26718 35.085 8.45303 32.9145 8.45303C27.8033 8.45303 22.2826 9.34817 17.6266 7.2318C15.7464 6.37716 13.1154 6.82473 11.0682 6.82473C7.24827 6.82473 12.9371 8.45303 14.3248 8.45303C16.7572 8.45303 18.5621 8.71621 20.838 9.22195C26.389 10.4555 24.0108 12.184 22.421 17.0468C20.4977 22.9301 21.562 29.1845 19.7977 35.1391C18.4974 39.5274 19.6167 45.5998 19.6167 50.1556C19.6167 56.7593 19.6167 63.3629 19.6167 69.9666C19.6167 80.1284 19.6167 90.2902 19.6167 100.452C19.6167 112.038 17.9884 123.383 17.9884 135.008C17.9884 140.994 17.9884 146.979 17.9884 152.965C17.9884 155.678 17.9884 158.392 17.9884 161.106C17.9884 163.772 13.7943 161.445 17.5814 163.549C18.6078 164.119 23.2022 163.875 20.7927 163.187C17.3395 162.2 17.0122 163.252 13.5106 164.318C10.1065 165.354 8.80959 167.332 8.17341 170.831C7.6557 173.678 6.63903 174.54 10.254 174.54C12.4251 174.54 14.5962 174.54 16.7672 174.54C20.4417 174.54 19.2753 173.987 17.9884 171.735C15.1195 166.715 6.02625 172.911 14.3248 172.911C15.9079 172.911 21.5615 174.545 22.4663 174.042C23.128 173.674 26.4235 170.081 25.6776 169.655C23.5761 168.454 22.2683 167.795 20.069 167.167C18.1053 166.606 15.1962 162.115 18.8026 162.327C20.5717 162.431 19.1621 168.838 20.6118 170.288C22.7991 172.475 21.9025 174.642 18.8026 173.092C16.7629 172.072 14.7084 170.877 12.7417 169.836C9.45581 168.096 15.097 168.026 16.3601 168.026C19.4382 168.026 13.9959 168.026 13.1035 168.026C12.5901 168.026 17.6517 168.151 13.9177 166.579C12.8493 166.129 10.4099 166.906 12.2894 167.845C13.4909 168.446 15.0459 168.076 16.3601 168.66C20.466 170.484 17.0592 165.791 17.6266 165.629C19.2594 165.163 24.5016 175.734 24.5016 174.133C24.5016 171.983 25.4756 166.648 24.0493 165.222C23.3149 164.488 21.8714 164.77 20.9284 164.77C20.0519 164.77 22.5885 165.408 23.2804 165.946C26.0541 168.103 22.5355 172.483 24.1398 174.087C26.7606 176.708 24.5676 177.081 20.8832 177.751C18.1847 178.242 16.2732 176.602 13.9177 175.761C12.492 175.252 4.76418 173.01 6.59034 172.097" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+      
+<svg width="102" height="178" viewBox="0 0 102 178" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="chaise_morph" d="M10.7645 2.19643C10.7645 11.5441 10.7645 20.8917 10.7645 30.2394C10.7645 38.37 11.0684 46.5588 10.3575 54.6639C9.6727 62.4703 8.3221 69.9734 8.3221 77.8219C8.3221 85.9332 8.3221 94.0446 8.3221 102.156C8.3221 105.744 8.3221 109.333 8.3221 112.921C8.3221 114.515 7.49834 119.334 8.7744 120.61C10.6346 122.47 12.8095 117.841 13.8402 116.811C16.029 114.622 18.4703 112.974 21.3033 111.7C25.0555 110.011 31.0895 108.85 35.189 108.85C41.2852 108.85 53.6919 109.141 57.352 115.363C58.7173 117.684 61.3568 118.953 62.8701 121.56C64.8499 124.969 64.6203 129.489 66.4886 132.641C68.7563 136.468 68.5692 142.592 68.5692 147.07C68.5692 159.013 67.7413 169.009 55.9046 174.389C49.2109 177.432 36.8658 176.353 30.4851 173.801C28.8408 173.143 28.1039 171.376 26.6405 170.725C25.5146 170.225 22.8343 169.481 22.1174 168.645C20.8002 167.108 18.4983 166.794 17.4587 165.026C16.2508 162.973 12.9772 160.737 10.9455 159.508C4.14708 155.398 1.8089 147.812 1.8089 140.104C1.8089 133.932 2.76809 129.723 4.61319 123.957C5.56936 120.969 6.71377 120.319 8.72917 118.303C10.7127 116.32 8.3221 117.131 8.3221 114.911C8.3221 113.691 7.04925 105.899 7.96025 105.639C12.2193 104.422 17.6799 103.151 22.1626 103.151C31.9257 103.151 41.797 102.628 51.472 104.01C52.9902 104.227 54.9281 105.33 56.5379 105.774C59.9122 106.705 63.4668 106.408 66.9409 106.408C72.611 106.408 78.7272 104.305 78.339 111.293C78.1873 114.023 68.4927 115.363 66.579 115.363C63.1717 115.363 59.7643 115.363 56.3569 115.363C51.476 115.363 59.3575 115.363 60.8348 115.363C65.6352 115.363 71.6673 115.672 76.6202 116.223C79.1169 116.5 83.207 118.085 85.4854 115.996C86.1175 115.417 85.8699 111.583 86.2996 110.478C87.8939 106.379 73.499 107.222 72.3233 107.222C69.0761 107.222 69.7557 107.122 72.459 107.222C74.7387 107.306 77.3135 107.881 79.1531 109.031C82.2986 110.997 85.1245 121.557 86.2996 124.952C87.158 127.432 86.8443 130.958 87.2494 133.591C87.634 136.091 89.1572 138.708 90.1894 141.054C91.4913 144.013 93.765 146.74 94.8029 149.738C95.4422 151.585 95.6907 154.043 96.4312 155.709C97.2807 157.62 97.8542 156.15 95.8432 155.257C92.6659 153.844 92.5643 153.728 89.2848 155.302C87.4243 156.195 78.5345 161.791 82.7716 164.212C85.1005 165.543 83.7917 171.223 86.4805 171.54C89.8427 171.935 92.0697 174.925 95.4361 172.761C98.4486 170.824 99.5069 164.245 99.5069 160.956C99.5069 157.445 95.3103 155.257 92.1795 155.257C89.6604 155.257 78.6632 153.511 77.5701 157.337C77.0202 159.262 78.855 159.778 79.9673 160.956C81.5891 162.673 79.6252 166.056 81.5956 167.288C84.1896 168.909 85.4698 173.168 88.5159 173.168C91.1866 173.168 93.1127 172.648 95.6171 171.721C97.5998 170.986 96.2503 169.424 96.2503 167.469C96.2503 164.024 97.0644 160.468 97.0644 156.885C97.0644 152.786 93.6216 150.385 92.9485 146.346C92.3423 142.709 91.073 137.311 89.1039 134.089C87.9295 132.167 84.8708 132.991 83.631 130.787C82.3758 128.555 82.4097 126.79 82.4097 124.319C82.4097 121.939 82.4819 113.421 81.1433 111.7C80.1012 110.36 80.3128 107.434 78.7913 106.589C74.4622 104.183 68.0135 105.758 63.5034 106.408C58.3264 107.153 53.2798 108.282 48.0345 107.991C44.1103 107.773 40.2285 106.408 36.365 106.408C31.0524 106.408 25.5639 107.222 20.1273 107.222C18.3807 107.222 9.50478 108.411 8.50302 106.408C7.27886 103.959 6.6938 97.3933 6.6938 94.6024C6.6938 90.6674 6.6938 86.7323 6.6938 82.7973C6.6938 79.1892 7.50795 75.3718 7.50795 71.5801C7.50795 66.7821 14.1099 67.3284 18.0919 67.3284C25.293 67.3284 32.4038 66.5143 39.893 66.5143C45.2693 66.5143 50.7839 66.1139 56.1308 66.5595C57.4144 66.6665 64.2749 67.1567 64.4532 67.7807C65.4415 71.2397 65.6899 77.7601 60.8348 75.0628C56.8343 72.8404 45.0558 74.2901 40.4358 75.289C37.2668 75.9742 33.5892 75.4699 30.3946 75.4699C26.6514 75.4699 22.8417 76.2841 19.2679 76.2841C15.3479 76.2841 11.4279 76.2841 7.50795 76.2841" stroke="black" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      
+  
         </section>
 
         <section id="chapitre9" class="bg">  <!-- chapitre 9 -->
+  <ul class="technique-gsap"> 
+    <li>...</li> 
+    <li>...</li> 
+    <li>scrollTrigger 
+        <ul> 
+            <li>trigger=#chapitre9</li> 
+            <li>...</li> 
+        </ul> 
+    </li> 
+</ul> 
             <div> <img  class="papier" src="./img/img_elements_visuels/paper.png" alt="paper"><p class="t_8"> George est maintenant à 80 ans, il a vécu une vie merveilleuse et à maintenant des petits enfants. Il est très heureux et le voici, assis à coter du même arbre que celui de son enfance.</p></div>    
             <img class="perso perso_1" src="../img/img_personnages/1.png" alt="1">
             <img id="ev_nuage_01" src="../img/img_elements_visuels/nuage_01.png" alt="nuage_01">  
