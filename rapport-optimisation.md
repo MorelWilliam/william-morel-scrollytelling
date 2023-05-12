@@ -28,7 +28,7 @@ Pour contrer ceci, je dois ajouter des informations dans le style qui est préci
 | nuage-02 |  style="translate: none; rotate: none; scale: none;"> | 15,8 kib | 13,4 kib
 | nuage-03 | style="translate: none; rotate: none; scale: none;"> | 13,3 kib | 12,7 kib
 ### Résultat
-
+Après l'optimisation de mes styles et de mes images, les performances sont passées de 92 à 98 donc c'est une grosse amélioration.
 ## Problème #2
 ### Aucune balise  *meta name="viewport"* n'est configuré
 
@@ -36,13 +36,13 @@ Pour contrer ceci, je dois ajouter des informations dans le style qui est préci
 Pour résoudre le problème, je vais rajouter dans mon *head* la balise meta, cela va permettre définir la largeur de la page et la hauteur et elle va aussi permettre que le site s'adapte à tout appareil.
 
 ### Résultat
-
+Après l'ajout d'une balise *meta description*, le SEO est passé de 80 à 100 donc c'est une très grosse amélioration et aussi ça rajoute une description au site web donc c'est très bénéfique.
 ## Problème #3
 ### Évitez d'énormes charges utiles de réseau
 ### Action concrète pour résoudre le problème
 Certaine de mes images, surtout les spritesheet, sont très lourdes donc elles augmentent grandement les charges utiles de réseau. Certaines images qui sont en webp, n'ont pas été assez compressé donc je vais utiliser une compression de taille de *Kio* pour réduire grandement leur poid et donc évitez les charges inutiles de réseau.
 ### Résultat
-
+Avant l'optimisation de mes images en Webp ou en png compressé, la taille totale des kio était de 24 644 Kio. Toutefois, après l'optimisation de mes images en Webp ou en png compressé, la taille totale des kio est de 14 211 Kio donc c'est une très grosse amélioration.
 ## Rapport projet ScrollyTelling après l'optimisation
 
-[Rapport du 11 mai 2023, 21:53:06](https://pagespeed.web.dev/analysis/https-morelwilliam-github-io-william-morel-scrollytelling/ncf7uk7emg?form_factor=mobile)
+[Rapport du 12 mai 2023, 12:25:38](https://pagespeed.web.dev/analysis/https-morelwilliam-github-io-william-morel-scrollytelling/5iddn1zyd5?form_factor=desktop)
