@@ -9,29 +9,38 @@ Pour économiser des données aux clients et du temps de chargement, les images 
 Pour contrer ceci, je dois ajouter des informations dans le style qui est précis à chacune de mes images. Par exemple, pour le podium, je suis conseillé de mettre un ce code là " style="translate: none; rotate: none; scale: none;"> " pour diminuir la taille de la ressource de l'image au minimum. Voici un tableau avec les images que je dois apporter des changements de style et le code que je dois changer pour améliorer ceux-ci.
 	| Image | Code pour le style | Taille de la ressource | Économie après changement
 | ----------- | ----------- |  ----------- |  ----------- |
-| spritesheet-fleur | style="bottom: 13.9397%; |
-| spritesheet-ballon-fête | Title |
-| spritesheet-chien | Title |
-| stationnement | Title |
-| mariage | Title |
-| cours | Title |
-| champs | Title |
-| foret | Title |
-| chambre-vide | Title |
-| spritesheet-ball | Title |
-
-
+| planche | style="bottom: 13.9397%; | 150,2 kib | 147,2 kib
+| podium |  style="translate: none; rotate: none; scale: none;"> | 105,0 kib | 96,9 kib
+| personnage-1 | style="bottom: 34.8493%;"> | 104,8 kib | 92,1 kib
+| personnage-6 | style="bottom: 34.8493%;"> | 94,0 kib | 82,6 kib
+| cabane-arbre | style="bottom: 34.8493%;"> | 138,2 kib | 75,9 kib
+| berceau | style="translate: none; rotate: none; scale: none;"> | 88,9 kib | 75,6 kib
+| arbre | alt="arbre"> | 136,0 | 74,7 kib
+| gateau | style="translate: none; rotate: none; scale: none; transform: translate(0%, 0px);"> | 75,7 kib | 66,6 kib
+| personnage-4 | alt="4" | 74,7 kib | 65,7 kib
+| personnage-5 | alt="5" | 80,5 kib | 63,6 kib
+| camion |  style="translate: none; rotate: none; scale: none;"> | 96,0 kib | 52,7 kib
+| piscine | style="translate: none; rotate: none; scale: none;"> | 55,5 kib | 48,8 kib
+| personnage-3 |  alt="3"> | 59,6 kib | 40,8 kib
+| barbecue | style="translate: none; rotate: none; scale: none; transform: translate(0%, 0px);"> | 36,3 kib | 34,2 kib
+| nuage-01 |" style="translate: none; rotate: none; scale: none;"> | 25,3 kib | 25,2 kib
+| fleche | alt="fleche"> | 15,8 kib | 13,4 kib
+| nuage-02 |  style="translate: none; rotate: none; scale: none;"> | 15,8 kib | 13,4 kib
+| nuage-03 | style="translate: none; rotate: none; scale: none;"> | 13,3 kib | 12,7 kib
 ### Résultat
 
 ## Problème #2
-### Dimensionnez correctement les images
+### Aucune balise  *meta name="viewport"* n'est configuré
 
 ### Action concrète pour résoudre le problème
+Pour résoudre le problème, je vais rajouter dans mon *head* la balise meta, cela va permettre définir la largeur de la page et la hauteur et elle va aussi permettre que le site s'adapte à tout appareil.
 
 ### Résultat
+
 ## Problème #3
-### Dimensionnez correctement les images
+### Évitez d'énormes charges utiles de réseau
 ### Action concrète pour résoudre le problème
+Certaine de mes images, surtout les spritesheet, sont très lourdes donc elles augmentent grandement les charges utiles de réseau. Certaines images qui sont en webp, n'ont pas été assez compressé donc je vais utiliser une compression de taille de *Kio* pour réduire grandement leur poid et donc évitez les charges inutiles de réseau.
 ### Résultat
 
 ## Rapport projet ScrollyTelling après l'optimisation
