@@ -14,6 +14,15 @@ transform: translate(-50%, -50%);
 font-size: 08vw;
 }
 
+p{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: solid;
+    border-style:dotted ;
+    z-index: 2;
+}
+
+
 .morph{
     position: absolute;
     bottom: 10vh;
@@ -124,6 +133,8 @@ bottom: 0vh;
 }
 
 
+
+
 #ev_planche{
     position: absolute;
     z-index:2;
@@ -156,7 +167,7 @@ bottom: 0vh;
 
 #ev_camion{
     position: absolute;
-    z-index:2;
+    z-index:1;
     width: 60vw;
     height:70vh;
     object-fit: contain; 

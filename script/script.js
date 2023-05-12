@@ -60,7 +60,6 @@ gsap.to("#perso_chap2", {
   });
 
 
-
   /* Animation chapitre 3 */
   gsap.to("#chapitre3", {
     backgroundSize: "120%",

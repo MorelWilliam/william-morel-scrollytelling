@@ -34,8 +34,9 @@
     <li>pin=true, afin que le chapitre reste collé, le temps de l'animation</li> 
     <li>scrollTrigger 
         <ul> 
+            <li>scrub=true</li> 
             <li>trigger=#chapitre2</li> 
-            <li>...</li> 
+            <li>parallaxe avec l'image de fond, la planche, la cabane et le personnage</li> 
         </ul> 
     </li> 
 </ul> 
@@ -47,12 +48,16 @@
 </section>
 <section id="chapitre3" class="bg"> <!-- chapitre 3 -->
   <ul class="technique-gsap"> 
-    <li>...</li> 
-    <li>...</li> 
+    <li>rotation podium</li> 
+    <li>rotation:25</li>
+    <li>repeat:-1</li> 
+    <li>duration:4</li>  
     <li>scrollTrigger 
         <ul> 
+            <li>animation de la grandeur de l'image de fond</li> 
+            <li>backgroundSize:"120%"</li> 
             <li>trigger=#chapitre3</li> 
-            <li>...</li> 
+            <li>scrub=true</li> 
         </ul> 
     </li> 
 </ul> 
@@ -64,12 +69,17 @@
 
  <section id="chapitre4" class="bg">  <!-- chapitre 4 -->
   <ul class="technique-gsap"> 
-    <li>...</li> 
-    <li>...</li> 
+    <li>motion path : parcous au camion</li> 
+    <li>autoRotate:true</li> 
+    <li>repeat:-1</li> 
+    <li>duration:5</li> 
+    <li>yoyo:true</li> 
     <li>scrollTrigger 
         <ul> 
+            <li>animation de la grandeur de l'image de fond</li> 
+            <li>backgroundSize:"120%"</li>
             <li>trigger=#chapitre4</li> 
-            <li>...</li> 
+            <li>scrub:true</li> 
         </ul> 
     </li> 
 </ul> 
@@ -85,12 +95,15 @@
 
 <section id="chapitre5" class="bg">  <!-- chapitre 5 -->
   <ul class="technique-gsap"> 
-    <li>...</li> 
-    <li>...</li> 
+    <li>timeline piscine et barbecue</li> 
+    <li>piscine : rotate:25, duration:3, repeat:-1</li>
+    <li>barbecue : x:400%</li>  
     <li>scrollTrigger 
         <ul> 
+            <li>animation de la grandeur de l'image de fond</li> 
+            <li>backgroundSize:"120%"</li>
             <li>trigger=#chapitre5</li> 
-            <li>...</li> 
+            <li>scrub:true</li> 
         </ul> 
     </li> 
 </ul> 
@@ -102,12 +115,13 @@
  </section>
  <section id="chapitre6" class="bg">  <!-- chapitre 6 -->
   <ul class="technique-gsap"> 
-    <li>...</li> 
-    <li>...</li> 
+    <li>animation berceau : rotate:12, repeat:-1, duration:3</li> 
     <li>scrollTrigger 
-        <ul> 
+        <ul>
+            <li>animation de la grandeur de l'image de fond</li> 
+            <li>backgroundSize:"120%"</li> 
             <li>trigger=#chapitre6</li> 
-            <li>...</li> 
+            <li>scrub:true</li> 
         </ul> 
     </li> 
 </ul> 
@@ -119,12 +133,15 @@
 
  <section id="chapitre7" class="bg">  <!-- chapitre 7  -->
   <ul class="technique-gsap"> 
-    <li>...</li> 
-    <li>...</li> 
     <li>scrollTrigger 
-        <ul> 
+        <ul>
+            <li>animation de la grandeur de l'image de fond</li> 
+            <li>backgroundSize:"120%"</li> 
             <li>trigger=#chapitre7</li> 
-            <li>...</li> 
+            <li>scrub</li> 
+            <li>animation gâteau : au scroll le gateau arrive à droit et après scoll vers le haut le gâteau sort de l'écran</li> 
+            <li>toggleActions :restart complete reverse reset </li> 
+            <li>trigger: chapitre7</li> 
         </ul> 
     </li> 
 </ul> 
@@ -136,12 +153,14 @@
 
  <section id="chapitre8" class="bg">  <!-- chapitre 8 -->
   <ul class="technique-gsap"> 
-    <li>...</li> 
-    <li>...</li> 
+    <li>morph d'une chaise roulante avec une cane</li> 
+    <li>Duration:3</li> 
     <li>scrollTrigger 
-        <ul> 
+        <ul>
             <li>trigger=#chapitre8</li> 
-            <li>...</li> 
+            <li>Draw svg point intérogation au scroll</li>
+            <li>Duration:10</li>
+            <li>Ease:power1.inOut</li>
         </ul> 
     </li> 
 </ul> 
@@ -163,17 +182,19 @@
 
 <section id="chapitre9" class="bg">  <!-- chapitre 9 -->
   <ul class="technique-gsap"> 
-    <li>...</li> 
-    <li>...</li> 
     <li>scrollTrigger 
         <ul> 
             <li>trigger=#chapitre9</li> 
-            <li>...</li> 
+            <li>scrub:true</li>
+            <li> toggleActions: 'play pause resume pause'</li>
+            <li> animation nuage 01 : x-200, rotate:25, duration:6, repeat:-1,opacity:100</li>
+            <li> animation nuage 02 : x-200, rotate:40, duration:6, repeat:-1,opacity:100</li>
+            <li> animation nuage 03 : x-200, rotate:50, duration:6, repeat:-1,opacity:100</li>
         </ul> 
     </li> 
 </ul> 
- <div> <img  class="papier" src="img/img_elements_visuels/paper1.webp" alt="paper"><p class="t_8"> George est maintenant à 80 ans, il a vécu une vie merveilleuse et à maintenant des petits enfants. Il est très heureux et le voici, assis à coter du même arbre que celui de son enfance.</p></div>    
- <img class="perso perso_1" style="bottom: 34.8493%" src="img/img_personnages/1.png" alt="1">
+ <div><p class="t_8"> George est maintenant à 80 ans, il a vécu une vie merveilleuse et à maintenant des petits enfants. Il est très heureux et le voici, assis à coter du même arbre que celui de son enfance.</p></div>    
+ <img class="perso perso_1" style="bottom: 34.8493%" src="img/img_personnages/1.webp" alt="1">
  <img class="nuage no1" style="translate: none; rotate: none; scale: none;" id="ev_nuage_01" src="img/img_elements_visuels/nuage_01.webp" alt="nuage_01">  
 <img class="nuage no2" style="translate: none; rotate: none; scale: none;" id="ev_nuage_02" src="img/img_elements_visuels/nuage_02.webp" alt="nuage_02">  
  <img class="nuage no3" style="translate: none; rotate: none; scale: none;" id="ev_nuage_03" src="img/img_elements_visuels/nuage_03.webp" alt="nuage_03">  
