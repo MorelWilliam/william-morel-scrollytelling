@@ -76,10 +76,11 @@ gsap.to("#perso_chap2", {
     ease: "none",
     scrollTrigger: {
         trigger: "#chapitre3",
-        start: "top bottom",
+        start: "50% 50%",
         end: "bottom top",
         scrub: true,
-        markers: true
+        markers: true,
+        pin:true
     }
 });
 
@@ -93,10 +94,11 @@ gsap.from("#ev_podium", { rotation:25, repeat:-1, duration:4})
     ease: "none",
     scrollTrigger: {
         trigger: "#chapitre4",
-        start: "top bottom",
+        start: "50% 50%",
         end: "bottom top",
         scrub: true,
-        markers: true
+        markers: true ,
+        pin:true
     }
 });
 gsap.to('#ev_camion', {
@@ -126,10 +128,11 @@ gsap.to(".spritesheet_skite", {
     ease: "none",
     scrollTrigger: {
         trigger: "#chapitre5",
-        start: "top bottom",
+        start: "50% 50%",
         end: "bottom top",
         scrub: true,
-        markers: true
+        markers: true,
+        pin:true
     }
 });
 
@@ -152,10 +155,11 @@ gsap.timeline()
   gsap.timeline({
     scrollTrigger: {
         trigger: "#chapitre6",
-        start: "top bottom",
+        start: "50% 50%",
         end: "bottom top",
         scrub: true,
         markers: true,
+        pin:true
     }
 })
 .to("#chapitre6", {
@@ -171,10 +175,11 @@ gsap.from("#ev_berceau", { rotation:12, repeat:-1, duration:3})
     ease: "none",
     scrollTrigger: {
         trigger: "#chapitre7",
-        start: "top bottom",
+        start: "50% 50%",
         end: "bottom top",
         scrub: true,
-        markers: true
+        markers: true,
+        pin:true
     }
 });
 
