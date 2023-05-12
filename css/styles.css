@@ -292,7 +292,7 @@ section{
 }
 
 header {
-    background-image: url("../img/img_arriere_plan/champs.png");
+    background-image: url("../img/img_arriere_plan/champs.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
@@ -301,7 +301,7 @@ background-size: cover;
 }
 
 #chapitre2{
-    background-image: url("../img/img_arriere_plan/forêt.png");
+    background-image: url("../img/img_arriere_plan/forêt.webp");
 height: 250vh;
 width: 100vw;
 background-position: center;
@@ -312,7 +312,7 @@ background-position: 50% 0%;
 }
 
 #chapitre3{
-    background-image: url("../img/img_arriere_plan/auditorium.png");
+    background-image: url("../img/img_arriere_plan/auditorium.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
@@ -321,7 +321,7 @@ background-size: cover;
 }
 
 #chapitre4{
-    background-image: url("../img/img_arriere_plan/stationnement.png");
+    background-image: url("../img/img_arriere_plan/stationnement.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
@@ -330,7 +330,7 @@ background-size: cover;
 }
 
 #chapitre5{
-    background-image: url("../img/img_arriere_plan/cours.png");
+    background-image: url("../img/img_arriere_plan/cours.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
@@ -339,7 +339,7 @@ background-size: cover;
 }
 
 #chapitre6{
-    background-image: url("../img/img_arriere_plan/chambre.png");
+    background-image: url("../img/img_arriere_plan/chambre.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
@@ -348,7 +348,7 @@ background-size: cover;
 }
 
 #chapitre7{
-    background-image: url("../img/img_arriere_plan/mariage.png");
+    background-image: url("../img/img_arriere_plan/mariage.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
@@ -357,7 +357,7 @@ background-size: cover;
 }
 
 #chapitre8{
-    background-image: url("../img/img_arriere_plan/chambre_vide.png");
+    background-image: url("../img/img_arriere_plan/chambre_vide.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
@@ -366,7 +366,7 @@ background-size: cover;
 }
 
 #chapitre9{
-    background-image: url("../img/img_arriere_plan/forêt.png");
+    background-image: url("../img/img_arriere_plan/forêt.webp");
 height: 100vh;
 width: 100vw;
 background-position: center;
