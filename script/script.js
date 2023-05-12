@@ -146,7 +146,7 @@ gsap.from("#ev_berceau", { rotation:12, repeat:-1, duration:3})
 });
 
 gsap.to('#ev_gateau', { 
-  x: '+-100%',
+  x:'100%',
   duration:5,
   scrollTrigger: {
     toggleActions: 'restart complete reverse reset',
@@ -184,6 +184,8 @@ gsap.timeline({
     toggleActions: 'play pause resume pause'
 }}
 )
-.from('.nuage.no1',{x:'-200%'},{  x: '200%', rotate:25, duration: 6, repeat:-1,opacity:100 })
-.from('.nuage.no2', {x:'-200%'},{ x: '200%',rotate:40, duration: 6, repeat:-1,opacity:100 })
-.from('.nuage.no3', {x:'-200%'},{x: '200%', rotate:50, duration: 6, repeat:-1,opacity:100 })
+.fromTo('.nuage.no1',{x:'-200%'},{  x: '200%', rotate:25, duration: 10,opacity:100 })
+.fromTo('.nuage.no2', {x:'-200%'},{ x: '200%',rotate:40, duration: 10,opacity:100 })
+.fromTo('.nuage.no3', {x:'-200%'},{x: '200%', rotate:50, duration: 10,opacity:100 })
+
+gsap.from("#ev_arbre", { rotation:12, repeat:-1, duration:5})

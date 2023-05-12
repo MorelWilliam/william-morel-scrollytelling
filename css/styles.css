@@ -132,6 +132,9 @@ object-fit: contain;
 bottom: 0vh;
 }
 
+.perso_1{
+    top: 550px;
+}
 
 
 
@@ -338,6 +341,7 @@ width: 100vw;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+z-index:1;
 }
 
 #chapitre5{
@@ -347,6 +351,7 @@ width: 100vw;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+z-index:1;
 }
 
 #chapitre6{
@@ -356,6 +361,7 @@ width: 100vw;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+z-index:1;
 }
 
 #chapitre7{
@@ -393,12 +399,14 @@ background-size: cover;
     /* spritesheet_ball*/
 
 .spritesheet_ball {
+    position: absolute;
+    z-index:10;
     width: 50vw;
     aspect-ratio: 1/1;
     background-repeat: no-repeat;
     background-size:cover;
 
-    background-image: url('../img/img_sprites_sheets/spritesheet-ball.png');
+    background-image: url('../img/img_sprites_sheets/spritesheet-ball_optim.png');
   
 
     animation-name: bond;
@@ -415,6 +423,7 @@ background-size: cover;
       /* spritesheet_fleur */
 
   .spritesheet_fleur {
+    z-index: 10;
 
     width: 50vw;
     aspect-ratio: 1/1;
@@ -422,7 +431,7 @@ background-size: cover;
     background-size:cover;
   
 
-    background-image: url('../img/img_sprites_sheets/spritesheet-fleur.png');
+    background-image: url('../img/img_sprites_sheets/spritesheet-fleur_opti.png');
   
 
     animation-name: bond;
@@ -441,6 +450,7 @@ background-size: cover;
         /* spritesheet_skite */
 
         .spritesheet_skite {
+            z-index: 10;
 
             width: 50vw;
             aspect-ratio: 1/1;
@@ -448,7 +458,7 @@ background-size: cover;
             background-size:cover;
           
         
-            background-image: url('../img/img_sprites_sheets/spritesheet-skite.png');
+            background-image: url('../img/img_sprites_sheets/spritesheet-oiseau_opti.png');
           
         
             animation-name: bond;
@@ -467,6 +477,7 @@ background-size: cover;
                 /* spritesheet_oiseau */
 
   .spritesheet_oiseau {
+    z-index: 10;
 
     width: 50vw;
     aspect-ratio: 1/1;
@@ -474,7 +485,7 @@ background-size: cover;
     background-size:cover;
   
 
-    background-image: url('../img/img_sprites_sheets/spritesheet-oiseau.png');
+    background-image: url('../img/img_sprites_sheets/spritesheet-skite_opti.png');
   
 
     animation-name: bond;
@@ -493,14 +504,14 @@ background-size: cover;
         /* spritesheet_chien */
 
         .spritesheet_chien {
-
+            z-index: 10;
             width: 50vw;
             aspect-ratio: 1/1;
             background-repeat: no-repeat;
             background-size:cover;
           
         
-            background-image: url('../img/img_sprites_sheets/spritesheet_chien.png');
+            background-image: url('../img/img_sprites_sheets/spritesheet_ballon_fete_optim.png');
           
         
             animation-name: bond;
@@ -519,14 +530,14 @@ background-size: cover;
                 /* spritesheet_ballon */
 
   .spritesheet_ballon {
-
+      z-index: 10;
     width: 50vw;
     aspect-ratio: 1/1;
     background-repeat: no-repeat;
     background-size:cover;
   
 
-    background-image: url('../img/img_sprites_sheets/spritesheet_ballon_fete.png');
+    background-image: url('../img/img_sprites_sheets/spritesheet-ball_optim.png');
   
 
     animation-name: bond;
