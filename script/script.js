@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-   /* gsap.registerPlugin(DrawSVGPlugin); */  
-  /*  gsap.registerPlugin(MorphSVGPlugin); */
+   gsap.registerPlugin(DrawSVGPlugin); 
+  gsap.registerPlugin(MorphSVGPlugin);
 
 
 
@@ -27,6 +27,16 @@ gsap.from(".fleche" , {
 
     },
 });
+
+gsap.to(".spritesheet_ball", {
+    scrollTrigger: {
+        trigger: "#chapitre2",
+        start: "top bottom",
+        end: "bottom top ",
+        scrub: true,
+    }
+  });
+
 
 gsap.to("#ev_planche", {
 bottom: "20%",
@@ -72,6 +82,9 @@ gsap.to("#perso_chap2", {
         markers: true
     }
 });
+
+
+
 gsap.from("#ev_podium", { rotation:25, repeat:-1, duration:4})
 
   /* Animation chapitre 4 */
@@ -95,6 +108,15 @@ gsap.to('#ev_camion', {
   duration: 5,
   yoyo: true,      
 });
+
+gsap.to(".spritesheet_skite", {
+  scrollTrigger: {
+      trigger: "#chapitre2",
+      start: "top bottom",
+      end: "bottom top ",
+      scrub: true,
+  }
+});
   
 
 
@@ -110,9 +132,20 @@ gsap.to('#ev_camion', {
         markers: true
     }
 });
+
+gsap.to(".spritesheet_oiseaux", {
+  scrollTrigger: {
+      trigger: "#chapitre2",
+      start: "top bottom",
+      end: "bottom top ",
+      scrub: true,
+  }
+});
+
 gsap.timeline()
 .from('#ev_piscine', { rotate:25, duration: 3, repeat:-1 })
 .from('#ev_barbecue', { x: '400%' });
+
 
   /* Animation chapitre 6 */
 
@@ -158,7 +191,7 @@ gsap.to('#ev_gateau', {
 })
 
   /* Animation chapitre 8 */
- /* Draw svg et morph
+ /* Draw svg et morph */
   gsap.timeline(
     {scrollTrigger: {
       trigger: "#chapitre8",
@@ -170,7 +203,7 @@ gsap.to('#ev_gateau', {
 })
 .fromTo('#ligne', {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
 .fromTo("#point", {drawSVG : "0% 0%" }, {drawSVG: "0% 100%", duration:10, ease :"power1.inOut"})
-.to("#chaise_morph", {duration:3, morphSVG: {shape:"#cane_morph"}}) Animation chapitre 9 */
+.to("#chaise_morph", {duration:3, morphSVG: {shape:"#cane_morph"}}) 
 
   /* Animation chapitre 9 */
 

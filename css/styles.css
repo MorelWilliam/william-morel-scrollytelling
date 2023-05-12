@@ -444,7 +444,7 @@ background-size: cover;
   @keyframes bond {
     from { background-position: 0 0; }
     to { background-position: calc(48vw*-48) 0; } 
-    /* Note: 19 images x 700px = 13300px */
+
   }
 
         /* spritesheet_skite */
